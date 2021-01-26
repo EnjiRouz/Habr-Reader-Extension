@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Habr Reader",
-  "description": "Расширение позволяет воспроизводить текст на странице со статьей на Хабре с возможностью изменения языка и скорости речи озвучивающего",
-  "version": "1.00",
+  "description": "Расширение позволяет воспроизводить текст на странице со статьей на Хабре с возможностью изменения языка и скорости воспроизведения",
+  "version": "1.01",
   "developer": {
     "name": "Enji Rouz",
-    "url": "https://github.com/EnjiRouz"
+    "url": "https://github.com/EnjiRouz/Habr-Reader-Opera-Extension"
   },
 
   "icons": {

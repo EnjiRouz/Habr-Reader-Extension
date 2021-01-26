@@ -124,6 +124,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     });
 });
 
+// подготовка текста поста к чтению
 window.onload = function () {
     let contentBody = document.getElementById("post-content-body");
     if (contentBody) {
