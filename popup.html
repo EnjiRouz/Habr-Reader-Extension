@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script type="text/javascript" src="js/popup.js" defer></script>
+    <title>Habr Reader</title>
+</head>
+<body>
+<div class="tool-bar">
+    <ul>
+        <li>
+            <button id="play-button">▶️</button>
+        </li>
+        <li>
+            <button id="pause-button">⏸️</button>
+        </li>
+        <li>
+            <button id="stop-button">⏹️</button>
+        </li>
+        <li>
+            <label for="speed">Speed</label>
+            <input type="number" name="speed" id="speed" placeholder="1" value="1" min="0.5" max="2.0"
+                   step="0.1">
+        </li>
+        <br>
+        <li>
+            <label><input type="radio" name="speech-language" value="ru-RU" id="ru" checked>ru-RU</label>
+        </li>
+        <li>
+            <label><input type="radio" name="speech-language" value="en-US" id="en">en-US</label>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

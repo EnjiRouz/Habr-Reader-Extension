@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Habr Reader",
+  "description": "Расширение позволяет воспроизводить текст на странице со статьей на Хабре с возможностью изменения языка и скорости речи озвучивающего",
+  "version": "1.00",
+  "developer": {
+    "name": "Enji Rouz",
+    "url": "https://github.com/EnjiRouz"
+  },
+
+  "icons": {
+    "16": "res/icon16.png",
+    "48": "res/icon48.png",
+    "128": "res/icon128.png"
+  },
+
+  "permissions": [
+    "storage",
+    "http://*/*",
+    "https://*/*",
+    "tabs",
+    "contextMenus"
+  ],
+
+  "background": {
+    "scripts": ["js/content.js"],
+    "persistent": true
+  },
+
+  "browser_action": {
+    "default_icon": "res/icon128.png",
+    "default_popup": "popup.html",
+    "icon_128": "res/icon128.png"
+  },
+
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["js/content.js"]
+  }],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}
